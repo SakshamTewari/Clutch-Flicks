@@ -14,17 +14,34 @@ Precision under pressure. One bullet, one chance. Whether it’s a 1v5 clutch or
 
 ### 1. Clone the Repo
 
-````bash
+```bash
 git clone https://github.com/your-username/clutch-flicks.git
 cd clutch-flicks
+```
 
 ### 2. Build the Docker Image
 
 ```bash
-docker build -t clutch-flicks .
+docker build -t clutch-flicks ./video processing service
+```
 
 ### 3. Run the App
 
 ```bash
 docker run -p 3000:3000 -v $(pwd)/uploads:/app/uploads clutch-flicks
-````
+```
+
+## API Endpoints (...in progress)
+
+### `POST /process-video Process a raw clip`
+
+## Future Plans
+
+    - Frontend Upload Form (React.js/Next.js)
+    - Add tagging and search for clips
+    - S3/Cloudinary storage
+    - Auth for upload/delete
+
+## 🤝Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
