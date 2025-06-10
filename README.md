@@ -28,7 +28,7 @@ docker build -t clutch-flicks ./video processing service
 ### 3. Run the App
 
 ```bash
-docker run -p 3000:3000 -v $(pwd)/uploads:/app/uploads clutch-flicks
+docker run -p 3000:3000  clutch-flicks
 ```
 
 ## API Endpoints (...in progress)
